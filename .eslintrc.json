@@ -1,0 +1,15 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "extends": ["prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    "no-console": "off",
+    "func-names": 0,
+    "consistent-return": 0,
+    "prettier/prettier": "error"
+  }
+}

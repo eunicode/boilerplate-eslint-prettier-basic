@@ -1,0 +1,25 @@
+{
+  "name": "boilerplate-eslint-prettier-basic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "notes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eunicode/boilerplate-eslint-prettier-basic.git"
+  },
+  "author": "eunicode@github",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eunicode/boilerplate-eslint-prettier-basic/issues"
+  },
+  "homepage": "https://github.com/eunicode/boilerplate-eslint-prettier-basic#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1"
+  }
+}
