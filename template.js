@@ -44,6 +44,10 @@ const x = 5;
 // disallow the use of console
 console.log('hi');
 
+// ESLINT - no-unused-vars
+// This is part of "extends": ["eslint:recommended"]
+const y = 6;
+
 // ESLINT - "eqeqeq": "error"
 // Shows squiggly line if you use '==' instead of '==='
 var a = 10;

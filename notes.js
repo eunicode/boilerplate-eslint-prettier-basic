@@ -127,6 +127,42 @@ Allows you to extend your configuration file from others configurations.
 A popular one is react-app provided by Create React App. 
 That's also in extends that you can use popular style guides such as the one of Airbnb, Google or Standard.
 
+Integrate Prettier with ESLint
+
+ESLint has formatting rules too like max-len (similar to printWidth) or quotes. 
+Well, if you use Prettier, you aren't going to need such rules. 
+Prettier replaces ESLint's formatting rules but doesn't replace code-quality rules.
+
+Thus, you can integrate Prettier in your ESLint configuration by installing the following:
+eslint-config-prettier 
+eslint-plugin-prettier
+
+eslint-config-prettier disables rules that conflict with Prettier  
+eslint-plugin-prettier adds the rule that format content using Prettier
+
+You can enable this configuration by using the recommended one:
+"extends": ["plugin:prettier/recommended"]
+tell ESLint we'll use Prettier's recommended configuration
+
+--------------------------------------------------------------------
+https://prettier.io/docs/en/integrating-with-linters.html
+
+ESLint - Disable formatting rules
+eslint-config-prettier is a config that disables rules that conflict with Prettier. 
+extend from it within your .eslintrc configuration. 
+Make sure to put it LAST in the extends array, so it gets the chance to OVERRIDE other configs.
+"extends": ["prettier"]
+
+Use ESLint to run Prettier
+eslint-plugin-prettier is a plugin that adds a rule that formats content using Prettier. 
+"plugins": ["prettier"],
+"rules": { "prettier/prettier": "error" }
+
+Recommended configuration
+eslint-plugin-prettier exposes a "recommended" configuration that configures both eslint-plugin-prettier and eslint-config-prettier in a single step. 
+extend the recommended config:
+"extends": ["plugin:prettier/recommended"]
+
 --------------------------------------------------------------------
 https://eslint.org/docs/user-guide/configuring
 
